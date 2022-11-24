@@ -1,0 +1,43 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Contacts</ion-title>
+    <ion-searchbar placeholder='Try "Jane"' [(ngModel)]="searchTerm" showCancelButton="focus" animated></ion-searchbar>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-grid>
+    <ion-row>
+      <ion-col>
+        <ion-card *ngFor="let contact of contacts | filter: searchTerm">
+          <ion-card-header>
+            <ion-card-title>
+              <ion-card-title>
+                {{contact.firstname}} {{contact.lastname}}
+              </ion-card-title>{{contact.number}}
+              <ion-card-subtitle>
+                {{contact.address}}
+              </ion-card-subtitle>
+              <ion-card-content>
+                {{contact.email}}
+              </ion-card-content>
+            </ion-card-title>
+            <ion-card-content>
+            <ion-button color="secondary" [routerLink]="['/', 'contacts', 'edit', contact._id]">Update</ion-button>
+
+            <ion-button color="danger" (click)="deleteContact(contact._id)">Delete</ion-button>
+            </ion-card-content>
+          </ion-card-header>
+        </ion-card>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+
+  <ion-fab vertical="bottom" horizontal="end" slot="fixed">
+    <ion-fab-button color="tertiary" routerLink="/contact-add">
+<ion-icon name="add"></ion-icon>
+    </ion-fab-button>
+  </ion-fab>
+
+
+</ion-content>
