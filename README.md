@@ -28,9 +28,8 @@ npm install
 npm install ng2-search-filter // for searchbar
 ionic serve
 ```
-```
+
 ![Contacts](https://user-images.githubusercontent.com/118997291/203834066-4e10fcfd-7c2b-4515-91f6-1266190829a6.JPG)
-```
 ![Create](https://user-images.githubusercontent.com/118997291/203834052-5c94a5e5-075f-414e-9b26-528b7a368b1e.JPG)
 ![Update](https://user-images.githubusercontent.com/118997291/203834057-d298d379-4482-4ef7-8e98-bee021875bfb.JPG)
 ![Remove](https://user-images.githubusercontent.com/118997291/203834061-7f9e8022-3852-4685-ad83-7f252ea3bae8.JPG)
