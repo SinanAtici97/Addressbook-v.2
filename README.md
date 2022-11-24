@@ -3,11 +3,15 @@
  
 
 
-## Getting Started
-
-### Installing
+```
+### Getting Started
 
 git clone https://github.com/SinanAtici97/Addressbook-v.2.git
+
+```
+
+```
+### Installing
 
 #for backend (working port:3000)
 cd ./addressbook
@@ -23,3 +27,4 @@ cd ./AngularApp
 npm install
 npm install ng2-search-filter // for searchbar
 ionic serve
+```
